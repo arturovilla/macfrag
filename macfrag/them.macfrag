@@ -1,0 +1,24 @@
+extension Theme {
+    static let macfrag = Theme(
+        colors: .init(colors: [
+            "plain": MacfragPalette.plain,
+            "comment": MacfragPalette.comment,
+            "keyword": MacfragPalette.keyword,
+            "string": MacfragPalette.string,
+            "number": MacfragPalette.number,
+            "type": MacfragPalette.type,
+
+            // C/C++ highlight query token names:
+            "function": MacfragPalette.fnCall,
+            "function.special": MacfragPalette.fnCall,
+            "property": MacfragPalette.variable,
+            "label": MacfragPalette.variable,
+            "constant": MacfragPalette.number,
+            "delimiter": MacfragPalette.plain,
+            "operator": MacfragPalette.plain,
+            "variable": MacfragPalette.variable,
+            "variable.builtin": MacfragPalette.builtin
+        ]),
+        fonts: .init(fonts: [:])
+    )
+}

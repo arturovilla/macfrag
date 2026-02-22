@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		69D43B6C2F4AD53C00DECDCE /* STTextView in Frameworks */ = {isa = PBXBuildFile; productRef = 69D43B6B2F4AD53C00DECDCE /* STTextView */; };
+		69D43B762F4AE74900DECDCE /* STTextView-Plugin-Neon in Frameworks */ = {isa = PBXBuildFile; productRef = 69D43B752F4AE74900DECDCE /* STTextView-Plugin-Neon */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		69D43B482F4A366E00DECDCE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69D43B762F4AE74900DECDCE /* STTextView-Plugin-Neon in Frameworks */,
+				69D43B6C2F4AD53C00DECDCE /* STTextView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,8 @@
 			);
 			name = macfrag;
 			packageProductDependencies = (
+				69D43B6B2F4AD53C00DECDCE /* STTextView */,
+				69D43B752F4AE74900DECDCE /* STTextView-Plugin-Neon */,
 			);
 			productName = macfrag;
 			productReference = 69D43B3A2F4A366D00DECDCE /* macfrag.app */;
@@ -195,6 +204,10 @@
 			);
 			mainGroup = 69D43B312F4A366D00DECDCE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				69D43B6A2F4AD53C00DECDCE /* XCRemoteSwiftPackageReference "STTextView" */,
+				69D43B742F4AE74900DECDCE /* XCRemoteSwiftPackageReference "STTextView-Plugin-Neon" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 69D43B3B2F4A366D00DECDCE /* Products */;
 			projectDirPath = "";
@@ -403,6 +416,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -435,6 +449,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -573,6 +588,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		69D43B6A2F4AD53C00DECDCE /* XCRemoteSwiftPackageReference "STTextView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/STTextView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.5;
+			};
+		};
+		69D43B742F4AE74900DECDCE /* XCRemoteSwiftPackageReference "STTextView-Plugin-Neon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/STTextView-Plugin-Neon";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		69D43B6B2F4AD53C00DECDCE /* STTextView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69D43B6A2F4AD53C00DECDCE /* XCRemoteSwiftPackageReference "STTextView" */;
+			productName = STTextView;
+		};
+		69D43B752F4AE74900DECDCE /* STTextView-Plugin-Neon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69D43B742F4AE74900DECDCE /* XCRemoteSwiftPackageReference "STTextView-Plugin-Neon" */;
+			productName = "STTextView-Plugin-Neon";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 69D43B322F4A366D00DECDCE /* Project object */;
 }
