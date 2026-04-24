@@ -3,6 +3,8 @@
 A native macOS Metal Shading Language (MSL) playground/editor, written in Swift/SwiftUI.
 
 It's a split-pane app: an MSL code editor on the left (with neon syntax highlighting via the `MacfragNeonTheme`/`MacfragTextDefaultsPlugin`/`MacfragAppearancePlugin` plugins on `MSLCodeEditor.swift`) and a live Metal shader preview on the right (`MetalShaderPreview.swift`) that compiles the source and renders the fragment shader, with a build log panel underneath the editor.
+<img width="4114" height="2588" alt="img_0540PM_Friday_24_April_2026_NvOqkoyP" src="https://github.com/user-attachments/assets/4db3419c-9f9c-4064-8202-46509f18349d" />
+
 
 ## Status
 
